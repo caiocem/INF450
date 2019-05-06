@@ -1,0 +1,156 @@
+WARNING: ./im.v:36: $readmemh(im_data2.txt): Not enough words in the file for the requested range [0:19].
+if_pc,    if_instr, id_regrs, id_regrt, ex_alua,  ex_alub,  ex_aluctl, mem_memdata, mem_memread, mem_memwrite, wb_regdata, wb_regwrite
+VCD info: dumpfile test.vcd opened for output.
+MUX_B=x H=0 P=x Hd=x Pd=x || PC=00000000 20080000 ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx RxWx||D=xxxxxxxx 
+b=xxxxxxxx j=xxxxxxxx||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx jx||R=xx C= 1 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=x || PC=00000004 20090001 ||rs= 0 rt= 8 rd= 0||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx RxWx||D=xxxxxxxx 
+b=00000004 j=xxxxxxxx||Opcode=08 Func=00||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx jx||R=xx C= 2 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000008 200a0002 ||rs= 0 rt= 9 rd= 0||A=00000000 B=00000000||w=xxxxxxxx Ram=xxxxxxxx RxWx||D=xxxxxxxx 
+b=0000000c j=0xxxxxxX||Opcode=08 Func=01||I=00000000 R=00000000||D= x alu=xxxxxxxx branchx jx||R=xx C= 3 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=0000000c 200b0003 ||rs= 0 rt=10 rd= 0||A=00000000 B=00000001||w=00000008 Ram=00000000 R0W0||D=xxxxxxxx 
+b=00000014 j=00200000||Opcode=08 Func=02||I=00000001 R=00000001||D= 8 alu=00000000 branchx j0||R=xx C= 4 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000010 200c0004 ||rs= 0 rt=11 rd= 0||A=00000000 B=00000002||w=00000009 Ram=00000000 R0W0||D=00000000 
+b=0000001c j=00240004||Opcode=08 Func=03||I=00000002 R=00000002||D= 9 alu=00000001 branchx j0||R=08 C= 5 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000014 200d0005 ||rs= 0 rt=12 rd= 0||A=00000000 B=00000003||w=0000000a Ram=00000000 R0W0||D=00000001 
+b=00000024 j=00280008||Opcode=08 Func=04||I=00000003 R=00000003||D=10 alu=00000002 branchx j0||R=09 C= 6 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000018 200e0006 ||rs= 0 rt=13 rd= 0||A=00000000 B=00000004||w=0000000b Ram=00000000 R0W0||D=00000002 
+b=0000002c j=002c000c||Opcode=08 Func=05||I=00000004 R=00000004||D=11 alu=00000003 branchx j0||R=0a C= 7 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=0000001c 200f0007 ||rs= 0 rt=14 rd= 0||A=00000000 B=00000005||w=0000000c Ram=00000004 R0W0||D=00000003 
+b=00000034 j=00300010||Opcode=08 Func=06||I=00000005 R=00000005||D=12 alu=00000004 branchx j0||R=0b C= 8 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000020 014a4820 ||rs= 0 rt=15 rd= 0||A=00000000 B=00000006||w=0000000d Ram=00000004 R0W0||D=00000004 
+b=0000003c j=00340014||Opcode=08 Func=07||I=00000006 R=00000006||D=13 alu=00000005 branchx j0||R=0c C= 9 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000024 016b5020 ||rs=10 rt=10 rd= 9||A=00000000 B=00000007||w=0000000e Ram=00000004 R0W0||D=00000005 
+b=000120a4 j=00380018||Opcode=00 Func=20||I=00000007 R=00000007||D=14 alu=00000006 branchx j0||R=0d C=10 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000028 01ed5822 ||rs=11 rt=11 rd=10||A=00000002 B=00000002||w=0000000f Ram=00000004 R0W0||D=00000006 
+b=000140a8 j=003c001c||Opcode=00 Func=20||I=00004820 R=00000004||D=15 alu=00000007 branchx j0||R=0e C=11 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=0000002c 112cfffc ||rs=15 rt=13 rd=11||A=00000003 B=00000003||w=00000002 Ram=00000004 R0W0||D=00000007 
+b=000160b4 j=05292080||Opcode=00 Func=22||I=00005020 R=00000006||D= 9 alu=00000004 branchx j0||R=0f C=12 
+-------------------------------------------------------------------------------------------------------
+MUX_B=3 H=0 P=1 Hd=0 Pd=0 || PC=00000030 01086820 ||rs= 9 rt=12 rd=31||A=00000007 B=00000005||w=00000003 Ram=00000004 R0W0||D=00000004 
+b=00000020 j=05ad4080||Opcode=04 Func=3c||I=00005822 R=00000002||D=10 alu=00000006 branchx j0||R=09 C=13 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000020 014a4820 ||rs= 0 rt= 0 rd= 0||A=00000004 B=00000004||w=00000005 Ram=00000000 R0W0||D=00000006 
+b=00000000 j=07b56088||Opcode=00 Func=00||I=fffffffc R=00000000||D=11 alu=00000002 branchx j0||R=0a C=14 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000024 016b5020 ||rs=10 rt=10 rd= 9||A=00000000 B=00000000||w=00000004 Ram=00000000 R0W0||D=00000002 
+b=000120a4 j=04b3fff0||Opcode=00 Func=20||I=00000000 R=00000000||D=31 alu=00000000 branchx j0||R=0b C=15 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000028 01ed5822 ||rs=11 rt=11 rd=10||A=00000006 B=00000006||w=00000000 Ram=00000000 R0W0||D=00000000 
+b=000140a8 j=00000000||Opcode=00 Func=20||I=00004820 R=0000000c||D= 0 alu=00000000 branchx j0||R=1f C=16 
+-------------------------------------------------------------------------------------------------------
+MUX_B=1 H=1 P=1 Hd=0 Pd=0 || PC=0000002c 112cfffc ||rs=15 rt=13 rd=11||A=00000002 B=00000002||w=00000006 Ram=00000003 R0W0||D=00000000 
+b=000160b4 j=05292080||Opcode=00 Func=22||I=00005020 R=00000004||D= 9 alu=0000000c branchx j0||R=00 C=17 
+-------------------------------------------------------------------------------------------------------
+MUX_B=2 H=0 P=1 Hd=1 Pd=1 || PC=00000020 014a4820 ||rs= 9 rt=12 rd=31||A=00000007 B=00000005||w=00000002 Ram=00000004 R0W0||D=0000000c 
+b=00000020 j=05ad4080||Opcode=04 Func=3c||I=00005822 R=00000002||D=10 alu=00000004 branchx j0||R=09 C=18 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000030 01086820 ||rs= 0 rt= 0 rd= 0||A=0000000c B=00000004||w=00000005 Ram=00000000 R0W0||D=00000004 
+b=00000000 j=07b56088||Opcode=00 Func=00||I=fffffffc R=00000008||D=11 alu=00000002 branchx j0||R=0a C=19 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000034 114cfffa ||rs= 8 rt= 8 rd=13||A=00000000 B=00000000||w=00000004 Ram=00000008 R0W0||D=00000002 
+b=0001a0b4 j=04b3fff0||Opcode=00 Func=20||I=00000000 R=00000000||D=31 alu=00000008 branchx j0||R=0b C=20 
+-------------------------------------------------------------------------------------------------------
+MUX_B=3 H=0 P=1 Hd=0 Pd=0 || PC=00000038 014a4825 ||rs=10 rt=12 rd=31||A=00000000 B=00000000||w=00000000 Ram=00000000 R0W0||D=00000008 
+b=00000020 j=00000000||Opcode=04 Func=3a||I=00006820 R=00000000||D= 0 alu=00000000 branchx j0||R=1f C=21 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000020 014a4820 ||rs= 0 rt= 0 rd= 0||A=00000004 B=00000004||w=00000000 Ram=00000000 R0W0||D=00000000 
+b=00000000 j=0421a080||Opcode=00 Func=00||I=fffffffa R=00000000||D=13 alu=00000000 branchx j0||R=00 C=22 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000024 016b5020 ||rs=10 rt=10 rd= 9||A=00000000 B=00000000||w=00000004 Ram=00000000 R0W0||D=00000000 
+b=000120a4 j=0533ffe8||Opcode=00 Func=20||I=00000000 R=00000000||D=31 alu=00000000 branchx j0||R=0d C=23 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000028 01ed5822 ||rs=11 rt=11 rd=10||A=00000004 B=00000004||w=00000000 Ram=00000000 R0W0||D=00000000 
+b=000140a8 j=00000000||Opcode=00 Func=20||I=00004820 R=00000008||D= 0 alu=00000000 branchx j0||R=1f C=24 
+-------------------------------------------------------------------------------------------------------
+MUX_B=1 H=1 P=1 Hd=0 Pd=0 || PC=0000002c 112cfffc ||rs=15 rt=13 rd=11||A=00000002 B=00000002||w=00000004 Ram=00000008 R0W0||D=00000000 
+b=000160b4 j=05292080||Opcode=00 Func=22||I=00005020 R=00000004||D= 9 alu=00000008 branchx j0||R=00 C=25 
+-------------------------------------------------------------------------------------------------------
+MUX_B=2 H=0 P=1 Hd=1 Pd=1 || PC=00000020 014a4820 ||rs= 9 rt=12 rd=31||A=00000007 B=00000000||w=00000002 Ram=00000004 R0W0||D=00000008 
+b=00000020 j=05ad4080||Opcode=04 Func=3c||I=00005822 R=00000007||D=10 alu=00000004 branchx j0||R=09 C=26 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000030 01086820 ||rs= 0 rt= 0 rd= 0||A=00000008 B=00000004||w=00000000 Ram=00000004 R0W0||D=00000004 
+b=00000000 j=07b56088||Opcode=00 Func=00||I=fffffffc R=00000004||D=11 alu=00000007 branchx j0||R=0a C=27 
+-------------------------------------------------------------------------------------------------------
+MUX_B=1 H=1 P=1 Hd=0 Pd=0 || PC=00000034 114cfffa ||rs= 8 rt= 8 rd=13||A=00000000 B=00000000||w=00000004 Ram=00000004 R0W0||D=00000007 
+b=0001a0b4 j=04b3fff0||Opcode=00 Func=20||I=00000000 R=00000000||D=31 alu=00000004 branchx j0||R=0b C=28 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=1 Pd=1 || PC=00000020 014a4820 ||rs=10 rt=12 rd=31||A=00000000 B=00000000||w=00000000 Ram=00000000 R0W0||D=00000004 
+b=00000020 j=00000000||Opcode=04 Func=3a||I=00006820 R=00000000||D= 0 alu=00000000 branchx j0||R=1f C=29 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000024 016b5020 ||rs=10 rt=10 rd= 9||A=00000004 B=00000004||w=00000000 Ram=00000000 R0W0||D=00000000 
+b=000120a4 j=0421a080||Opcode=00 Func=20||I=fffffffa R=00000000||D=13 alu=00000000 branchx j0||R=00 C=30 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=00000028 01ed5822 ||rs=11 rt=11 rd=10||A=00000004 B=00000004||w=00000004 Ram=00000000 R0W0||D=00000000 
+b=000140a8 j=0533ffe8||Opcode=00 Func=20||I=00004820 R=00000008||D=31 alu=00000000 branchx j0||R=0d C=31 
+-------------------------------------------------------------------------------------------------------
+MUX_B=1 H=1 P=1 Hd=0 Pd=0 || PC=0000002c 112cfffc ||rs=15 rt=13 rd=11||A=00000007 B=00000007||w=00000004 Ram=00000008 R0W0||D=00000000 
+b=000160b4 j=05292080||Opcode=00 Func=22||I=00005020 R=0000000e||D= 9 alu=00000008 branchx j0||R=1f C=32 
+-------------------------------------------------------------------------------------------------------
+MUX_B=1 H=1 P=1 Hd=1 Pd=1 || PC=00000020 014a4820 ||rs= 9 rt=12 rd=31||A=00000007 B=00000000||w=00000007 Ram=00000003 R0W0||D=00000008 
+b=00000020 j=05ad4080||Opcode=04 Func=3c||I=00005822 R=00000007||D=10 alu=0000000e branchx j0||R=09 C=33 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=1 Pd=1 || PC=000120a4 xxxxxxxx ||rs=10 rt=10 rd= 9||A=00000008 B=00000004||w=00000000 Ram=00000004 R0W0||D=0000000e 
+b=000120a4 j=07b56088||Opcode=00 Func=20||I=fffffffc R=00000004||D=11 alu=00000007 branchx j0||R=0a C=34 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120a8 xxxxxxxx ||rs= x rt= x rd= x||A=0000000e B=0000000e||w=00000004 Ram=00000004 R0W0||D=00000007 
+b=xxxxxxxx j=04b3fff0||Opcode=xx Func=xx||I=00004820 R=0000001c||D=31 alu=00000004 branchx j0||R=0b C=35 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=1 Hd=0 Pd=0 || PC=000120ac xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=0000000e Ram=00000000 R0W0||D=00000004 
+b=xxxxxxxx j=05292080||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= 9 alu=0000001c branchx j0||R=1f C=36 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=1 || PC=000120b0 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=0000001c 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=09 C=37 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=1 Hd=0 Pd=0 || PC=000120b4 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=38 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=1 || PC=000120b8 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=39 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=1 Hd=0 Pd=0 || PC=000120bc xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=40 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=1 || PC=000120c0 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=41 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120c4 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=42 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120c8 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=43 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120cc xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=44 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120d0 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=45 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120d4 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=46 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120d8 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=47 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120dc xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=48 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=1 Hd=0 Pd=0 || PC=000120e0 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=49 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=1 || PC=000120e4 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=50 
+-------------------------------------------------------------------------------------------------------
+MUX_B=0 H=0 P=0 Hd=0 Pd=0 || PC=000120e8 xxxxxxxx ||rs= x rt= x rd= x||A=xxxxxxxx B=xxxxxxxx||w=xxxxxxxx Ram=xxxxxxxx R0W0||D=xxxxxxxx 
+b=xxxxxxxx j=0xxxxxxX||Opcode=xx Func=xx||I=xxxxxxxx R=xxxxxxxx||D= x alu=xxxxxxxx branchx j0||R=xx C=51 
+-------------------------------------------------------------------------------------------------------

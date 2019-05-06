@@ -1,0 +1,4 @@
+ADDI $t1 $zero 0x000A
+ADDI $at $zero 0x0001
+SUB $t1 $t1 $at
+BEQ $t0 $zero 0xFFFD

@@ -1,0 +1,5 @@
+ADD $at $at $v0
+ADD $a1 $zero $v0
+ADD $a2 $zero $v0
+ADD $a0 $zero $v0
+ADD $a1 $zero $v0
