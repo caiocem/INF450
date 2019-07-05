@@ -238,4 +238,137 @@ BB0_3:
 BB1_3:
         ret;
 }
+        // .globl       _Z11VetorRandomPyS_yS_S_
+.visible .entry _Z11VetorRandomPyS_yS_S_(
+        .param .u64 _Z11VetorRandomPyS_yS_S__param_0,
+        .param .u64 _Z11VetorRandomPyS_yS_S__param_1,
+        .param .u64 _Z11VetorRandomPyS_yS_S__param_2,
+        .param .u64 _Z11VetorRandomPyS_yS_S__param_3,
+        .param .u64 _Z11VetorRandomPyS_yS_S__param_4
+)
+{
+        .local .align 8 .b8     __local_depot2[8];
+        .reg .b64       %SP;
+        .reg .b64       %SPL;
+        .reg .pred      %p<4>;
+        .reg .b32       %r<17>;
+        .reg .b64       %rd<38>;
+	
+	mov.u64         %rd37, __local_depot2;
+        cvta.local.u64  %SP, %rd37;
+        ld.param.u64    %rd7, [_Z11VetorRandomPyS_yS_S__param_0];
+        ld.param.u64    %rd8, [_Z11VetorRandomPyS_yS_S__param_1];
+        ld.param.u64    %rd9, [_Z11VetorRandomPyS_yS_S__param_2];
+        ld.param.u64    %rd10, [_Z11VetorRandomPyS_yS_S__param_3];
+        ld.param.u64    %rd6, [_Z11VetorRandomPyS_yS_S__param_4];
+        cvta.to.global.u64      %rd1, %rd10;
+        cvta.to.global.u64      %rd2, %rd8;
+        cvta.to.global.u64      %rd3, %rd7;
+        add.u64         %rd11, %SP, 0;
+        cvta.to.local.u64       %rd4, %rd11;
+        mov.u32         %r6, %ctaid.x;
+        mov.u32         %r7, %ntid.x;
+        mov.u32         %r8, %tid.x;
+        mad.lo.s32      %r1, %r6, %r7, %r8;
+        cvt.u64.u32     %rd12, %r1;
+        setp.ge.u64     %p1, %rd12, %rd9;
+        @%p1 bra        BB2_5;
+	
+	 // inline asm
+        mov.u32 %r9,%clock;
+        // inline asm
+        cvt.s64.s32     %rd5, %r1;
+        mul.wide.s32    %rd13, %r1, 8;
+        add.s64         %rd14, %rd3, %rd13;
+        add.s64         %rd15, %rd2, %rd13;
+        ld.global.u64   %rd16, [%rd15];
+        ld.global.u64   %rd17, [%rd14];
+        add.s64         %rd18, %rd16, %rd17;
+        add.s64         %rd19, %rd1, %rd13;
+        st.global.u64   [%rd19], %rd18;
+        // inline asm
+        mov.u32 %r10,%clock;
+        // inline asm
+        setp.ne.s32     %p2, %r1, 0;
+        @%p2 bra        BB2_3;
+	
+	sub.s32         %r11, %r10, %r9;
+        st.local.u32    [%rd4], %r11;
+        mov.u64         %rd20, $str2;
+        cvta.global.u64         %rd21, %rd20;
+        // Callseq Start 2
+        {
+        .reg .b32 temp_param_reg;
+        // <end>}
+        .param .b64 param0;
+        st.param.b64    [param0+0], %rd21;
+        .param .b64 param1;
+        st.param.b64    [param1+0], %rd11;
+        .param .b32 retval0;
+        call.uni (retval0),
+        vprintf,
+        (
+        param0,
+        param1
+        );
+        ld.param.b32    %r12, [retval0+0];
+	
+	 //{
+        }// Callseq End 2
+
+BB2_3:
+	// inline asm
+        mov.u32 %r13,%clock;
+        // inline asm
+        cvta.to.global.u64      %rd23, %rd6;
+        shl.b64         %rd24, %rd5, 3;
+        add.s64         %rd25, %rd23, %rd24;
+        ld.global.u64   %rd26, [%rd25];
+        shl.b64         %rd27, %rd26, 3;
+        add.s64         %rd28, %rd3, %rd27;
+        add.s64         %rd29, %rd2, %rd27;
+        ld.global.u64   %rd30, [%rd29];
+        ld.global.u64   %rd31, [%rd28];
+        add.s64         %rd32, %rd30, %rd31;
+        add.s64         %rd33, %rd1, %rd27;
+        st.global.u64   [%rd33], %rd32;
+        // inline asm
+        mov.u32 %r14,%clock;
+        // inline asm
+        @%p2 bra        BB2_5;
+	
+	sub.s32         %r15, %r14, %r13;
+        st.local.u32    [%rd4], %r15;
+        mov.u64         %rd34, $str3;
+        cvta.global.u64         %rd35, %rd34;
+        // Callseq Start 3
+        {
+        .reg .b32 temp_param_reg;
+        // <end>}
+        .param .b64 param0;
+        st.param.b64    [param0+0], %rd35;
+        .param .b64 param1;
+        st.param.b64    [param1+0], %rd11;
+        .param .b32 retval0;
+        call.uni (retval0),
+        vprintf,
+        (
+        param0,
+        param1
+        );
+        ld.param.b32    %r16, [retval0+0];
+	
+	//{
+        }// Callseq End 3
+
+BB2_5:
+        ret;
+}
+
+
+
+
+
+
+
 
